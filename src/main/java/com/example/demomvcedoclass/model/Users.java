@@ -1,5 +1,6 @@
 package com.example.demomvcedoclass.model;
 
+import com.example.demomvcedoclass.Enum.Role;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -24,6 +25,9 @@ public class Users {
     private String email;
     private String password;
     private String Location;
+
+    @Enumerated
+    private Role role;
 
     @CreationTimestamp
     private Date created;

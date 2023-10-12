@@ -22,5 +22,11 @@ public class UserController {
         log.info("Controller Class = User Id ");
         return new ModelAndView("WelcomePage").addObject("login", new LoginDto());
     }
+
+    @GetMapping("login")
+    public ModelAndView loginUser(){
+        log.info("Controller Class = LoginDto");
+        return new ModelAndView("loginPage").addObject("login", new LoginDto());
+    }
 }
 //https://github.com/Collinsdaberechukwu/DemoMvcEdoClass.git

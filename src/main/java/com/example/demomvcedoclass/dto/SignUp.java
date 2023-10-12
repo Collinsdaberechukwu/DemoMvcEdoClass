@@ -16,4 +16,5 @@ public class SignUp {
     private String email;
     private String password;
     private String Location;
+    private String role;
 }
